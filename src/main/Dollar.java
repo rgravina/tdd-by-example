@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 class Dollar {
     final int amount;
 
@@ -7,5 +9,10 @@ class Dollar {
 
     Dollar times(int multiplier) {
         return new Dollar(amount * multiplier);
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        return amount == ((Dollar) object).amount;
     }
 }
