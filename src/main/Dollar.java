@@ -1,5 +1,3 @@
-import java.util.Objects;
-
 class Dollar {
     final int amount;
 
